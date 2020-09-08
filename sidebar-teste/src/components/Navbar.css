@@ -23,11 +23,13 @@
     position:fixed;
     top:0;
     left: -193px;
-    transition: 850ms;
-}
-.nav-menu.active{
-    left: 0%;
     transition: 350ms;
+}
+.nav-menu:hover{
+    left:0;
+}
+.nav-menu:hover .navbar-toggle{
+    opacity: 0;
 }
 .nav-text{
     display:flex;

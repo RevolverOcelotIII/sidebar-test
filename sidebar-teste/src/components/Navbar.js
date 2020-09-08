@@ -15,25 +15,15 @@ function Navbar() {
                 <ul className='nav-menu-items'>
                     <li className='navbar-toggle'>
                         <div className={sidebar? 'menu-bars active' : 'menu-bars'}>
-                            {
-                                sidebar? <h1>Oversee</h1> : <FaIcons.FaBars/>
-                            }
+                            <FaIcons.FaBars/>
                         </div>
                     </li>
-                    {SidebarData.map((item, index) =>{
-                        if(sidebar) return (
-                            <li key={index} className={item.cName}>
+                    {SidebarData.map((item) =>{
+                        return (
+                            <li className={sidebar? item.cName : 'nav-text-hidden'}>
                                 <Link to={item.path}>
                                     {item.icon}
-                                    <span>{item.title}</span>
-                                </Link>
-                            </li>
-
-                        )
-                        else return (
-                            <li key={index} className='nav-text-hidden'>
-                                <Link to={item.path}>
-                                    {item.icon}
+                                    {sidebar? <span>{item.title}</span>: null}
                                 </Link>
                             </li>
                         )
