@@ -33,7 +33,7 @@
 }
 .nav-text{
     display:flex;
-    justify-items: right;
+    justify-content: start;
     align-items:center;
     padding:8px 0px 8px 16px;
     list-style: none;
@@ -54,7 +54,7 @@
 .nav-text-hidden{
     display:flex;
     justify-content: start;
-    align-items: fle;
+    align-items:center;
     padding:8px 0px 8px 16px;
     list-style: none;
     height: 60px;
