@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import * as FaIcons from 'react-icons/fa'
-import {AiOutlineClose} from 'react-icons/ai'
 import {SidebarData} from './SidebarData'
 import './Navbar.css'
 function Navbar() {
